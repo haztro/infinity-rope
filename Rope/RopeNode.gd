@@ -9,9 +9,11 @@ var colour = Color(1, 1, 1, 1)
 
 var player = null
 var x_offset = Vector2.ZERO
-var old_offset = Vector2.ZERO
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	player = get_parent().get_parent().get_node("Player")
 
+
+#func _process(delta):
+#	$Label.text = str(x_offset.x)

@@ -65,9 +65,3 @@ func get_tile_map_slice(pos):
 		if cell != TileMap.INVALID_CELL:
 			slice.append(Vector2(pos, tilemap_rect.position.y + i))	
 	return slice
-
-
-func _on_Timer_timeout():
-	tiles_in_world -=2
-	world_size = tiles_in_world * $TileMap.cell_size.x
-	print(tiles_in_world)
